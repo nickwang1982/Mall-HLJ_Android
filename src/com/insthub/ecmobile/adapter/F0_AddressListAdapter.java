@@ -105,6 +105,7 @@ public class F0_AddressListAdapter extends BaseAdapter {
 			convertView = inflater.inflate(R.layout.f0_address_cell, null);
 			holder.layout = (LinearLayout) convertView.findViewById(R.id.address_manage_item_layout);
 			holder.name = (TextView) convertView.findViewById(R.id.address_manage_item_name);
+			holder.country = (TextView) convertView.findViewById(R.id.address_manage_item_country);
 			holder.province = (TextView) convertView.findViewById(R.id.address_manage_item_province);
 			holder.city = (TextView) convertView.findViewById(R.id.address_manage_item_city);
 			holder.county = (TextView) convertView.findViewById(R.id.address_manage_item_county);
@@ -122,6 +123,7 @@ public class F0_AddressListAdapter extends BaseAdapter {
 		}
 		
 		holder.name.setText(address.consignee);
+		holder.country.setText(address.country_name);
 		holder.province.setText(address.province_name);
 		if(!address.city_name.equals("null")) {
 			holder.city.setText(address.city_name);
@@ -135,6 +137,7 @@ public class F0_AddressListAdapter extends BaseAdapter {
 		if(isSelected.get(position)) {
 			holder.select.setVisibility(View.VISIBLE);
 			holder.name.setTextColor(Color.parseColor("#666699"));
+			holder.country.setTextColor(Color.parseColor("#666699"));
 			holder.province.setTextColor(Color.parseColor("#666699"));
 			holder.city.setTextColor(Color.parseColor("#666699"));
 			holder.county.setTextColor(Color.parseColor("#666699"));
@@ -142,6 +145,7 @@ public class F0_AddressListAdapter extends BaseAdapter {
 		} else {
 			holder.select.setVisibility(View.GONE);
 			holder.name.setTextColor(Color.parseColor("#000000"));
+			holder.country.setTextColor(Color.parseColor("#000000"));
 			holder.province.setTextColor(Color.parseColor("#000000"));
 			holder.city.setTextColor(Color.parseColor("#000000"));
 			holder.county.setTextColor(Color.parseColor("#000000"));
@@ -172,6 +176,7 @@ public class F0_AddressListAdapter extends BaseAdapter {
 	
 	class ViewHolder {
 		private TextView name;
+		private TextView country;
 		private TextView province;
 		private TextView city;
 		private TextView county;

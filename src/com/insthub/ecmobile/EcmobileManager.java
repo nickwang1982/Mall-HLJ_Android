@@ -42,32 +42,32 @@ public class EcmobileManager {
 	// 获取支付宝parterID(合作者身份)
 	public static String getAlipayParterId(Context context)
     {
-        return "xxx";
+        return "2088911501027479";
 	}
 	
 	// 获取支付宝sellerID(收款账户)
 	public static String getAlipaySellerId(Context context)
     {
-        return "xxx";
+        return "zhangning@honglingjin.xyz";
 	}
 	
 	// 获取支付宝key
 	public static String getAlipayKey(Context context)
     {
-        return "xxx";
+        return "kga62wf3uum486n72ds372m1gzzytan4";
 	}
 	
 	// 获取支付宝rsa_alipay_public(公钥)
 	public static String getRsaAlipayPublic(Context context)
     {
-        return "xxx";
+		 return "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDRq0+rfcFMmm8CJhB9rW5e1EXA3a52hsmYUNIopzrMDivaS3n/lAN4DVK/a7YH3cWfEHTBrGxPxwb/jAYueHxVLbil/oJ2ziIuHwQzttdCVk0GA7avHtVwZuMtCVXxFCARw4OxcbrPdSdALK/I7qdTzlfAYMZaJQMIXj8R15NQ4QIDAQAB";
 	}
 	
 	// 获取支付宝rsa_private(私钥)
 	public static String getRsaPrivate(Context context)
     {
-        return "xxx";
-	}
+        return "MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBANGrT6t9wUyabwImEH2tbl7URcDdrnaGyZhQ0iinOswOK9pLef+UA3gNUr9rtgfdxZ8QdMGsbE/HBv+MBi54fFUtuKX+gnbOIi4fBDO210JWTQYDtq8e1XBm4y0JVfEUIBHDg7Fxus91J0Asr8jup1POV8BgxlolAwhePxHXk1DhAgMBAAECgYB2sF5iOsbwwT9z3O5a5pFjFxEBc7wuFnEKSz4ci0YKez8xzKYcGsK38/rSp3udClqzh5JAjIWnx4fbo31gUw419lzMS/2k9uuxMW5eI1DfgSamdqsHtwQxwNyelfoyltPtMHliw41/5kRxlzE0ZKwzB5bNLbp2VzappuJc72SiEQJBAP0zPePSzcqFhZB7/x7VFZbVKc0JGkDHSvNcpzm/JmitXanDo1uIO5nW1m0WsE9qlwmE1tjEgzb9HegzqHoIXdUCQQDT/NeTXl+G+nEVSYSNMgYXZk7gUoU80BzfpWm3C6yxp6hRmTl6KaNrOILJKdmSyqk99KSsxLU8sfdB93v8CRDdAkEA74YC/TtVXEl1cZorXNJ9CuP6GDGNOUyOlavHsjQmtI2Udl1RcuxsXXrD/Ayjm20dFm8pA4TbEDDgkuITdeXmRQJBAKJ/dcy8keOJBLg5o8cMKokzXpEsEIA+U3PIe5HZ/CYui6MJHnsbge6F4hNL5kFU4ojgiH77RqZhEVVa3YqkdG0CQFc1k3wTRFXaHjn8GssJu5RqkkvfT6EPwNGR5oyMZvoBqU34JKvIAr89daj1ONfxjhmmf9qgu8l5lXXmLT/hN7M=";
+    }
 	
 	// 获取支付宝回调地址
 	public static String getAlipayCallback(Context context)

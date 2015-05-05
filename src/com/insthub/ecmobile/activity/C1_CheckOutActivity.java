@@ -295,12 +295,12 @@ public class C1_CheckOutActivity extends BaseActivity implements OnClickListener
                 }
 
             }
-//            else
-//            {
-//                ToastView toast1 = new ToastView(C1_CheckOutActivity.this, "该配送方式不支持货到付款");
-//                toast1.setGravity(Gravity.CENTER, 0, 0);
-//                toast1.show();
-//            }
+            else
+            {
+                ToastView toast1 = new ToastView(C1_CheckOutActivity.this, "该配送方式不支持货到付款");
+                toast1.setGravity(Gravity.CENTER, 0, 0);
+                toast1.show();
+            }
 			break;
 		}
 		
@@ -546,26 +546,26 @@ public class C1_CheckOutActivity extends BaseActivity implements OnClickListener
 
 			}
 		}
-        else if(requestCode == REQUEST_Distribution)
-        {
-			if (data != null)
-            {
-                String shippingString = data.getStringExtra("shipping");
-                try
-                {
-                   JSONObject shippingJSONObject = new JSONObject(shippingString);
-                    shipping = new SHIPPING();
-                    shipping.fromJson(shippingJSONObject);
+//        else if(requestCode == REQUEST_Distribution)
+//        {
+//			if (data != null)
+//            {
+//                String shippingString = data.getStringExtra("shipping");
+//                try
+//                {
+//                   JSONObject shippingJSONObject = new JSONObject(shippingString);
+//                    shipping = new SHIPPING();
+//                    shipping.fromJson(shippingJSONObject);
 //                    dis_type.setText(shipping.shipping_name);
-                    fees.setText(shipping.format_shipping_fee);
-                    refreshTotalPrice();
-                }
-                catch (JSONException e)
-                {
-
-                }
-			}
-		}
+//                    fees.setText(shipping.format_shipping_fee);
+//                    refreshTotalPrice();
+//                }
+//                catch (JSONException e)
+//                {
+//
+//                }
+//			}
+//		}
         else if(requestCode == REQUEST_BONUS)
         {
 			if (data != null)
@@ -593,25 +593,27 @@ public class C1_CheckOutActivity extends BaseActivity implements OnClickListener
 				invoice_message.setText(inv_payee);
 			}
 		}
-        else if(requestCode == REQUEST_RedEnvelope) {
-            if (data != null) {
-                String bonusJSONString = data.getStringExtra("bonus");
-
-                if (null != bonusJSONString) {
-                    try {
-                        JSONObject jsonObject = new JSONObject(bonusJSONString);
-                        selectedBONUS = new  BONUS();
-                        selectedBONUS.fromJson(jsonObject);
-                        redPaper_name.setText(selectedBONUS.type_name + "[" + selectedBONUS.bonus_money_formated + "]");
-                        bonus_text.setText("-" + selectedBONUS.bonus_money_formated);
-                        refreshTotalPrice();
-                    } catch (JSONException e) {
-
-                    }
-                }
-
-            }
-        }else    if (requestCode == REQUEST_UPPay) {
+//        else if(requestCode == REQUEST_RedEnvelope) {
+//            if (data != null) {
+//                String bonusJSONString = data.getStringExtra("bonus");
+//
+//                if (null != bonusJSONString) {
+//                    try {
+//                        JSONObject jsonObject = new JSONObject(bonusJSONString);
+//                        selectedBONUS = new  BONUS();
+//                        selectedBONUS.fromJson(jsonObject);
+//                        redPaper_name.setText(selectedBONUS.type_name + "[" + selectedBONUS.bonus_money_formated + "]");
+//                        bonus_text.setText("-" + selectedBONUS.bonus_money_formated);
+//                        refreshTotalPrice();
+//                    } catch (JSONException e) {
+//
+//                    }
+//                }
+//
+//            }
+//        }
+        
+        else    if (requestCode == REQUEST_UPPay) {
             if (data == null) {
                 return;
             }

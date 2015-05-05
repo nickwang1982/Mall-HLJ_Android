@@ -13,7 +13,7 @@
 <string name="address_address">Address (required)</string>
 <string name="address_add">Add address</string>
 <string name="select_address">Select address</string>
-<string name="addressb_country">Select country</string>
+<string name="addressb_country">Select school</string>
 <string name="manage_address">Address management</string>
 <string name="manage2_over">Done</string>
 <string name="manage2_name">Consignee</string>
@@ -134,7 +134,7 @@
 <string name="add_correct_email">Please enter correct email address</string>
 <string name="add_address">Please enter address</string>
 <string name="confirm_address">Please check address</string>
-<string name="select_province">Select province/state/region</string>
+<string name="select_province">Select Dorm</string>
 <string name="select_city">Select city</string>
 <string name="select_area">Select district/street</string>
 <string name="country">Country</string>

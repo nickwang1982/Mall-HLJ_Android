@@ -12,7 +12,7 @@
 <string name="address_address">详细地址（必填）</string>
 <string name="address_add">添加地址</string>
 <string name="select_address">选择地址</string>
-<string name="addressb_country">选择国家</string>
+<string name="addressb_country">选择学校</string>
 <string name="manage_address">收货地址管理</string>
 <string name="manage2_over">完成</string>
 <string name="manage2_name">收货人姓名</string>
@@ -132,7 +132,7 @@
 <string name="add_correct_email">请填写正确的邮箱地址</string>
 <string name="add_address">请填写详细地址</string>
 <string name="confirm_address">请确认地址信息是否完整</string>
-<string name="select_province">选择省</string>
+<string name="select_province">选择宿舍</string>
 <string name="select_city">选择市</string>
 <string name="select_area">选择地区</string>
 <string name="country">国家</string>
